@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -8,10 +9,50 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
 
+<body>
+  <h2>Part 1 - OSIS Number</h2>
+  <form action="#" method="post" autocomplete="on">
+    <label for="osis">OSIS Number</label>
+    <input type="text" id="osis" name="osis"
+           pattern="[0-9]{8}"
+           maxlength="8"
+           required>
+    <input type="submit">
+  </form>
+
+
+  <hr>
+
+
+  <h2>Part 2 - Password</h2>
+  <form action="#" method="post" autocomplete="on">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password"
+           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$"
+           required>
+    <input type="submit">
+  </form>
+
+
+  <hr>
+
+
+  <h2>Part 3 - Credit Card Number</h2>
+  <form action="#" method="post" autocomplete="on">
+    <label for="cc">Credit Card Number</label>
+    <input type="text" id="cc" name="cc"
+           pattern="[0-9]{16}"
+           maxlength="16"
+           required>
+    <input type="submit">
+  </form>
+
+
+  <script src="script.js"></script>
 </body>
 
+
 </html>
+
+
